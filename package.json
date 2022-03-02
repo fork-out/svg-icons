@@ -1,0 +1,29 @@
+{
+  "name": "icons",
+  "version": "0.9.1",
+  "author": "zainzafar90@gmail.com",
+  "private": true,
+  "main": "lib/index.js",
+  "module": "lib/esm/index.js",
+  "scripts": {
+    "build": "npm run optimize-icons && npm run build:icons",
+    "build:lib": "npm run optimize-icons && npm run build:icons",
+    "build:icons": "node ./scripts/build.js",
+    "optimize-icons": "rimraf ./optimized && rimraf ./showcase/src/optimized && svgo --config svgo.config.js -f ./svgs -o ./optimized && cp -R ./optimized ./showcase/src"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "files": [
+    "lib"
+  ],
+  "devDependencies": {
+    "@babel/core": "~7.15.5",
+    "@babel/plugin-transform-react-jsx": "^7.12.12",
+    "@svgr/core": "^5.5.0",
+    "camelcase": "^6.0.0",
+    "rimraf": "^3.0.2",
+    "svgo": "^2.0.0"
+  }
+}

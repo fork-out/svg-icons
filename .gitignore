@@ -1,0 +1,7 @@
+
+# production
+/build
+optimized
+lib/**/*.js
+lib/**/*.d.ts
+node_modules

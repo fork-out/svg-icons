@@ -1,0 +1,15 @@
+export const tags: { [key: string]: string[] } = {
+  amazon: ["faang", "new"],
+  apple: ["faang", "new"],
+  facebook: ["social", "faang", "new"],
+  github: ["new"],
+  google: ["faang", "new"],
+  instagram: ["social", "new"],
+  linkedin: ["social", "new"],
+  microsoft: ["faang", "new"],
+  netflix: ["stream", "faang", "new"],
+  npm: ["build"],
+  twitch: ["games"],
+  twitter: ["social"],
+  webpack: ["build"],
+};
